@@ -42,7 +42,7 @@ header {
     overflow: hidden; /* Pour couper les débordements éventuels */
     padding: 15px;
 }
-
+ 
 /* Image Styling */
 .produit img {
     width: 100%; /* Image responsive */
@@ -97,6 +97,7 @@ color: red;
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
+    padding: 10px;
 }
 
 .Contactez a {
@@ -130,6 +131,11 @@ color: red;
     
     .Contactez {
         font-size: 24px;
+        padding: 20px;
+        margin: 10px;
+    }
+    h1{
+        font-size: 1rem;
     }
 }
 
