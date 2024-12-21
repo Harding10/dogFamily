@@ -1,0 +1,157 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Section Styling */
+.produit-section {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les articles horizontalement */
+    gap: 20px; /* Espacement entre les articles */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrage de la section dans la page */
+}
+
+/* Produit Styling */
+.produit {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.33% - 20px); /* 3 articles par ligne */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Pour couper les débordements éventuels */
+    padding: 15px;
+}
+
+/* Image Styling */
+.produit img {
+    width: 100%; /* Image responsive */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+/* Pied de page principal */
+.footer-principal {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin: 10px;
+    background-color: rgb(37, 31, 26);
+}
+
+.icone-footer {
+    float: right;
+}
+
+.lien-footer {
+    border-bottom: 1px solid rgb(16, 180, 245);
+}
+
+.lien-footer p a {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+.lien-footer p a:hover{
+    color: red;
+    }
+
+.Contactez {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.Contactez a {
+    border-radius: 20px;
+    background-color: rgb(16, 180, 245);
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+}
+
+.Contactez a:hover {
+    background-color: brown;
+}
+
+
+/* --- Responsive Styles --- */
+
+/* Pour les tablettes (768px et moins) */
+@media screen and (max-width: 768px) {
+    .produit {
+        width: calc(50% - 20px); /* 2 articles par ligne */
+    }
+
+    
+ 
+.Contactez {
+        font-size: 24px;
+    }
+
+    .Contactez a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Pour les mobiles (480px et moins) */
+@media screen and (max-width: 480px) {
+    .produit {
+        width: calc(100% - 20px); /* 1 article par ligne */
+    }
+
+    header {
+        font-size: 18px;
+        
+ 
+padding: 10px;
+    }
+
+    .Contactez {
+        font-size: 20px;
+    }
+
+    .Contactez a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
